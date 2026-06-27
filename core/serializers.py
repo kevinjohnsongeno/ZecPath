@@ -3,7 +3,7 @@ from . models import Job,User,Application
 class UserSerializer(serializers.ModelSerializer):
     class Meta:
         model = User
-        fields = ['id','name','created_at']
+        fields = ['id','name','email','created_at']
 class JobSerializer(serializers.ModelSerializer):
     class Meta:
         model = Job
